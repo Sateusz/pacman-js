@@ -64,4 +64,22 @@ function drawWalls()
     ctx.fillRect(800,450,50,50);
 }
 
+function drawPlayer()
+{
+    //Otwarta buzia
+    ctx.beginPath();
+    ctx.arc(500, 425, 20, 0.25 * Math.PI, 1.25 * Math.PI, false);
+    ctx.fillStyle = "rgb(255, 255, 0)";
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(500, 425, 20, 0.75 * Math.PI, 1.75 * Math.PI, false);
+    ctx.fill();
+
+    //Zamknieta buzia
+    // ctx.beginPath();
+    // ctx.arc(500,425,20,0,2*Math.PI,false);
+    // ctx.fillStyle = "rgb(255,255,0)";
+    // ctx.fill();
+}
 drawWalls();
+drawPlayer();
